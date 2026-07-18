@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Employee Field Visit",
+    "slug": "employee-field-visit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": { "supportsTablet": true },
+    "android": {
+      "adaptiveIcon": { "backgroundColor": "#E6F4FE", "foregroundImage": "./assets/android-icon-foreground.png", "backgroundImage": "./assets/android-icon-background.png", "monochromeImage": "./assets/android-icon-monochrome.png" }
+    },
+    "web": { "favicon": "./assets/favicon.png" },
+    "plugins": [
+      ["expo-location", { "locationWhenInUsePermission": "Allow Employee Field Visit to use your location for attendance." }],
+      ["expo-camera", { "cameraPermission": "Allow Employee Field Visit to take your attendance selfie." }]
+    ]
+  }
+}
