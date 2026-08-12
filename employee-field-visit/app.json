@@ -7,14 +7,36 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
-    "ios": { "supportsTablet": true },
-    "android": {
-      "adaptiveIcon": { "backgroundColor": "#E6F4FE", "foregroundImage": "./assets/android-icon-foreground.png", "backgroundImage": "./assets/android-icon-background.png", "monochromeImage": "./assets/android-icon-monochrome.png" }
+    "scheme": "employee-field-visit",
+    "ios": {
+      "supportsTablet": true
     },
-    "web": { "favicon": "./assets/favicon.png" },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
     "plugins": [
-      ["expo-location", { "locationWhenInUsePermission": "Allow Employee Field Visit to use your location for attendance." }],
-      ["expo-camera", { "cameraPermission": "Allow Employee Field Visit to take your attendance selfie." }]
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Employee Field Visit to use your location for attendance."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Employee Field Visit to take your attendance selfie."
+        }
+      ],
+      "expo-secure-store",
+      "expo-router"
     ]
   }
 }
