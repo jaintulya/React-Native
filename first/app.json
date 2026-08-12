@@ -8,9 +8,11 @@
     "scheme": "first",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+
     "ios": {
       "supportsTablet": true
     },
+
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
@@ -22,12 +24,15 @@
       "predictiveBackGestureEnabled": false,
       "package": "com.anonymous.first"
     },
+
     "web": {
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
+
     "plugins": [
       "expo-router",
+
       [
         "expo-splash-screen",
         {
@@ -39,8 +44,20 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow app to use camera",
+          "microphonePermission": "Allow app to use microphone",
+          "recordAudioAndroid": true
+        }
+      ],
+
+      "expo-video"
     ],
+
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
