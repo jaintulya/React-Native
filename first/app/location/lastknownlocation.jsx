@@ -29,6 +29,7 @@ export default function LocationScreen() {
   };
 
   const handleStopTracker = () => {
+    
     if (statRef.current) {
       statRef.current.remove();
       statRef.current = null;
